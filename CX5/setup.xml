@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<setup>
+    <host name="host1" id="h1">
+        <ip>10.194.7.14</ip>
+        <interfaces>
+            <interface name="mlx5_ib0" id="if1">
+                <addresses>
+                    <address id="11-v4">11.194.7.14</address>
+                    <address id="11-v6" ipv6="yes">ab11::714</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_ib0.8002" id="pkey2">
+                <addresses>
+                    <address id="52-v4">52.194.7.14</address>
+                    <address id="52-v6" ipv6="yes">ab52::714</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_ib0.8003" id="pkey3">
+                <addresses>
+                    <address id="53-v4">53.194.7.14</address>
+                    <address id="53-v6" ipv6="yes">ab53::714</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce" id="if2">
+                <addresses>
+                    <address id="12-v4">12.194.7.14</address>
+                    <address id="12-v6" ipv6="yes">ab12::714</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce.43" id="vlan43">
+                <addresses>
+                    <address id="43-v4">43.194.7.14</address>
+                    <address id="43-v6" ipv6="yes">ab43::714</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce.45" id="vlan45">
+                <addresses>
+                    <address id="45-v4">45.194.7.10</address>
+                    <address id="45-v6" ipv6="yes">ab45::714</address>
+                </addresses>
+            </interface>
+        </interfaces>
+        <ib_devices>
+            <ib_device name="mlx5_0" id="dev1">
+                <ports>
+                    <port name="1" id="p1" type="IB">
+                        <v1_gids>0</v1_gids>
+                    </port>
+                </ports>
+            </ib_device>
+            <ib_device name="mlx5_1" id="dev2">
+                <ports>
+                    <port name="1" id="p2" type="ETH">
+                        <v1_gids>0 2 4</v1_gids>
+                        <v2_gids>1 3 5</v2_gids>
+                    </port>
+                </ports>
+            </ib_device>
+        </ib_devices>
+    </host>
+    <host name="host2" id="h2">
+        <ip>10.194.8.14</ip>
+        <interfaces>
+            <interface name="mlx5_ib0" id="if1">
+                <addresses>
+                    <address id="11-v4">11.194.8.14</address>
+                    <address id="11-v6" ipv6="yes">ab11::814</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_ib0.8002" id="pkey2">
+                <addresses>
+                    <address id="52-v4">52.194.8.14</address>
+                    <address id="52-v6" ipv6="yes">ab52::814</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_ib0.8003" id="pkey3">
+                <addresses>
+                    <address id="53-v4">53.194.8.14</address>
+                    <address id="53-v6" ipv6="yes">ab53::814</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce" id="if2">
+                <addresses>
+                    <address id="12-v4">12.194.8.14</address>
+                    <address id="12-v6" ipv6="yes">ab12::814</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce.43" id="vlan43">
+                <addresses>
+                    <address id="43-v4">43.194.8.14</address>
+                    <address id="43-v6" ipv6="yes">ab43::814</address>
+                </addresses>
+            </interface>
+            <interface name="mlx5_roce.45" id="vlan45">
+                <addresses>
+                    <address id="45-v4">45.194.8.14</address>
+                    <address id="45-v6" ipv6="yes">ab45::814</address>
+                </addresses>
+            </interface>
+        </interfaces>
+        <ib_devices>
+            <ib_device name="mlx5_0" id="dev1">
+                <ports>
+                    <port name="1" id="p1" type="IB">
+                        <v1_gids>0</v1_gids>
+                    </port>
+                </ports>
+            </ib_device>
+            <ib_device name="mlx5_1" id="dev2">
+                <ports>
+                    <port name="1" id="p2" type="ETH">
+                        <v1_gids>0 2 4</v1_gids>
+                        <v2_gids>1 3 5</v2_gids>
+                    </port>
+                </ports>
+            </ib_device>
+        </ib_devices>
+    </host>
+</setup>
